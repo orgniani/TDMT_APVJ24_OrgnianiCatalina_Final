@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 public class CameraController : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] private Transform m_target;
 
+    [Header("Parameters")]
     [SerializeField] private float m_mouseSensitivity = 2f;
     [SerializeField] private float m_distance = 2f;
     [SerializeField] private float m_height = 1f;
     [SerializeField] private float m_angleOffset = 0f;
 
+    [Header("Clamps")]
     [SerializeField] private float m_minPitch = -89f;
     [SerializeField] private float m_maxPitch = 89f;
 
